@@ -71,10 +71,15 @@ window.addEventListener("pageshow", () => {
       browser flash.
    ----------------------------------------------------------- */
 function setupNavTransitions(){
-  // Keep normal browser navigation.
-  // This allows Safari's Back and Forward buttons to work correctly.
   document.querySelectorAll("a[data-nav]").forEach(link => {
     link.addEventListener("click", () => {
+      const href = link.getAttribute("href");
+
+      if(!href || href.startsWith("#") || link.target === "_blank"){
+        return;
+      }
+
+      // Show Laä loading animation
       showLoader();
     });
   });
