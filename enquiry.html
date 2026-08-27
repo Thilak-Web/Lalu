@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry — Laalüee</title>
+<meta name="description" content="Start an enquiry with Laalüee — tell us about you and your business, and we'll take it from there.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-ghost">Laä</span>
+    <span class="loader-ink">Laä</span>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo" data-nav>Laal<span>ü</span>ee</a>
+  <ul>
+    <li><a href="index.html" data-nav>Home</a></li>
+    <li><a href="about.html" data-nav>About</a></li>
+    <li><a href="enquiry.html" data-nav>Enquiry</a></li>
+  </ul>
+</nav>
+
+<header class="page-hero">
+  <div class="watermark" id="watermark" aria-hidden="true"></div>
+  <div class="container">
+    <p class="eyebrow" style="text-align:center;">Let's talk</p>
+    <h1>Start an enquiry</h1>
+    <p class="lede">Share a few details and we'll get back to you personally — no forms disappearing into a void.</p>
+  </div>
+</header>
+
+<section class="container enquiry-wrap">
+  <div class="enquiry-info">
+    <h2>Prefer to reach out directly?</h2>
+    <p>Whichever way is easiest for you — we reply personally, always.</p>
+    <div class="enquiry-contact">
+      <a href="tel:+918946098277"><span class="tag">Call</span> +91 89460 98277</a>
+      <a href="https://wa.me/918946098277" target="_blank" rel="noopener"><span class="tag">WhatsApp</span> +91 89460 98277</a>
+      <a href="mailto:thilakjeshh@gmail.com"><span class="tag">Email</span> thilakjeshh@gmail.com</a>
+      <a href="#" onclick="return false;" style="cursor:default;"><span class="tag">Address</span> Nagal Nagar, Dindigul, Tamil Nadu, India</a>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <form id="enquiryForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="field">
+        <label for="contact">Number or Email</label>
+        <input type="text" id="contact" name="contact" placeholder="Phone number or email address" required>
+      </div>
+      <div class="field">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="City, State" required>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <p class="script-line">You have made it.</p>
+      <p>Thank you — we've received your details and will reach out to you shortly.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">Laal<span>ü</span>ee</div>
+        <p>Make It Happen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+918946098277">+91 89460 98277</a>
+        <a href="https://wa.me/918946098277" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:thilakjeshh@gmail.com">thilakjeshh@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Address</h4>
+        <p>Nagal Nagar,<br>Dindigul, Tamil Nadu,<br>India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Laalüee. All rights reserved.</span>
+      <span class="script">Make It Happen</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

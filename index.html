@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laalüee — Make It Happen</title>
+<meta name="description" content="Laalüee designs and builds premium, trustworthy websites for small businesses. Make it happen.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader overlay -->
+<div class="loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-ghost">Laä</span>
+    <span class="loader-ink">Laä</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="site-nav">
+  <a href="index.html" class="logo" data-nav>Laal<span>ü</span>ee</a>
+  <ul>
+    <li><a href="index.html" data-nav>Home</a></li>
+    <li><a href="about.html" data-nav>About</a></li>
+    <li><a href="enquiry.html" data-nav>Enquiry</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="watermark" id="watermark" aria-hidden="true"></div>
+  <div class="hero-content container">
+    <h1 class="brand-name">Laal&uuml;ee<span class="dot">.</span></h1>
+    <p class="brand-slogan">Make It Happen</p>
+    <p class="hero-sub">Websites, designed with intent</p>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="price">Scale your business with us — websites crafted from &#8377;5,000<span class="divider">&#10022;</span></span>
+    <span class="slogan">Make It Happen<span class="divider" style="color:var(--gold-dim); font-family:var(--font-body); margin-left:2.4rem;">&#10022;</span></span>
+  </div>
+</div>
+
+<!-- Options -->
+<section class="options container">
+  <div class="options-head">
+    <p class="eyebrow">Find your way</p>
+    <h2>Where would you like to go?</h2>
+  </div>
+  <div class="option-grid">
+    <a href="about.html" class="option-card" data-nav>
+      <span class="num">01</span>
+      <h3>About</h3>
+      <p>Meet the studio behind Laalüee, and why businesses trust us with their first impression.</p>
+      <span class="go">Learn more</span>
+    </a>
+    <a href="enquiry.html" class="option-card" data-nav>
+      <span class="num">02</span>
+      <h3>Enquiry</h3>
+      <p>Tell us a little about you and where you're based — we'll take it from there.</p>
+      <span class="go">Start an enquiry</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">Laal<span>ü</span>ee</div>
+        <p>Make It Happen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+918946098277">+91 89460 98277</a>
+        <a href="https://wa.me/918946098277" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:thilakjeshh@gmail.com">thilakjeshh@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Address</h4>
+        <p>Nagal Nagar,<br>Dindigul, Tamil Nadu,<br>India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Laalüee. All rights reserved.</span>
+      <span class="script">Make It Happen</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
