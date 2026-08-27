@@ -66,13 +66,11 @@ window.addEventListener("load", () => {
       browser flash.
    ----------------------------------------------------------- */
 function setupNavTransitions(){
+  // Keep normal browser navigation.
+  // This allows Safari's Back and Forward buttons to work correctly.
   document.querySelectorAll("a[data-nav]").forEach(link => {
-    link.addEventListener("click", (e) => {
-      const href = link.getAttribute("href");
-      if(!href || href.startsWith("#") || link.target === "_blank") return;
-      e.preventDefault();
+    link.addEventListener("click", () => {
       showLoader();
-      setTimeout(() => { window.location.href = href; }, 620);
     });
   });
 }
