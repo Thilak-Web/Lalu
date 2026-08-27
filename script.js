@@ -55,9 +55,14 @@ function showLoader(){
   loaderEl.classList.remove("hidden");
 }
 
-// Hide the loader once the page has actually rendered.
+// Hide loader after normal page load.
 window.addEventListener("load", () => {
   setTimeout(hideLoader, 550);
+});
+
+// Hide loader when Safari restores the page using Back/Forward cache.
+window.addEventListener("pageshow", () => {
+  hideLoader();
 });
 
 /* -----------------------------------------------------------
