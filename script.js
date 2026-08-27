@@ -72,18 +72,22 @@ window.addEventListener("pageshow", () => {
    ----------------------------------------------------------- */
 function setupNavTransitions(){
   document.querySelectorAll("a[data-nav]").forEach(link => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
 
-      if(!href || href.startsWith("#") || link.target === "_blank"){
-        return;
-      }
+      if(!href || href.startsWith("#") || link.target === "_blank") return;
 
-      // Show Laä loading animation
+      e.preventDefault();
+
       showLoader();
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 620);
     });
   });
 }
+    
 
 /* -----------------------------------------------------------
    6) Active nav link highlight
