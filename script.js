@@ -10,7 +10,7 @@
 const CONFIG = {
   // Replace YOUR_FORM_ID with the ID Formspree gives you.
   // Example: "https://formspree.io/f/abcdwxyz"
-  FORM_ENDPOINT:" https://formspree.io/f/moeqaypo"
+  FORM_ENDPOINT:"https://formspree.io/f/moeqvopq"
 };
 
 /* -----------------------------------------------------------
